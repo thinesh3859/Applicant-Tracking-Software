@@ -1,0 +1,4 @@
+Set-ExecutionPolicy RemoteSigned -Scope Process
+
+npm install sails-mongo
+sails generate api login
