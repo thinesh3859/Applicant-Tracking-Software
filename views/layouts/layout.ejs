@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/styles/all.css" rel="stylesheet" type="text/css">
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+    <script src="/dependencies/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+</head>
+<body>
+    
+    <div class="top-ribbon">
+        <div>
+            <!-- <img src="image/inspirisys-logonew.png"> -->
+            <ul>
+                <a href="/"><li class="home active"><i class="fa-solid fa-grid-2"></i> Home</li></a>
+                <a href="/possition"><li class="position"><i class="fa-solid fa-briefcase"></i> Positions</li></a>
+                <li class="talents"> <i class="fa-solid fa-bullseye"></i> Talents</li>
+                <li class="archive"><i class="fa-solid fa-box-archive"></i> Archive</li>
+                <a href="/appointment"><li class="Appointment"><i class="fa-solid fa-calendar-check"></i> Appointment</li></a>
+                <li class="Reports"><i class="fa-solid fa-chart-line"></i> Reports</li>
+            </ul>
+        </div>
+        <div class="profilediv" style="color: white;">
+            <i id="Theme-icon" onclick="ShowThemeSelector(this)" style="margin-right: 15px;font-size: 14px;cursor: pointer;" class="fa-solid fa-brush"></i>
+            <i style="margin-right: 15px;font-size: 14px;" class="fa-solid fa-gear"></i>
+            <i style="margin-right: 15px;font-size: 14px;" class="fa-solid fa-bell"></i>
+
+            <!-- <i style="margin-right: 10px;font-size: 16px;" class="fa-solid fa-user-tie"></i> -->
+            <img   class="profileimg" src="/images/profile.svg">
+            <div style="flex-direction: column;align-items: flex-start;width:120px">
+                <span  style="font-size: 12px;">Lakshmi Perumal</span>
+                <span style="font-size: 10px;">Program Manger</span>
+            </div>
+           
+            <a style="color: white;" href="/login"><i style="margin-left: 15px;font-size: 14px;" class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </div>
+    <div id="Theme-div">
+        <div class="theme theme1"><i class="fa-solid fa-palette"></i></div>
+        <div class="theme theme2"><i class="fa-solid fa-palette"></i></div>
+        <div class="theme theme3 active"><i class="fa-solid fa-palette"></i></div>
+        <div class="theme theme4"><i class="fa-solid fa-palette"></i></div>
+        <div class="theme theme5"><i class="fa-solid fa-palette"></i></div>
+        <div class="theme theme6"><i class="fa-solid fa-palette"></i></div>
+    </div>
+    <div class="Right-panel">
+
+    </div>
+    <div id="body-container" class="body-container">
+      <%- body %>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
